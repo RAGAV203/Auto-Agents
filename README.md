@@ -1,4 +1,4 @@
-# Auto-Agent: Replicating Chain of Thought Reasoning
+# Auto-Agents: Replicating Chain of Thought Reasoning
 
 ## Project Overview
 ![Description of the image](static/Auto-Agent.png)
