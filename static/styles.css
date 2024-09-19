@@ -1,0 +1,183 @@
+/* static/styles.css */
+
+/* General Styles */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h3, h4 {
+    color: #343a40;
+}
+
+#processing-output {
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+
+/* Code Block Styling */
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+}
+
+/* Heading Styling */
+h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #3c4147;
+}
+
+.agent-output {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.agent-output .agent-title {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.output-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    color: #495057;
+}
+
+/* Scrollable Final Answer */
+.final-answer-box {
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    white-space: pre-wrap; /* Preserves whitespace and line breaks */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Form Styles */
+form textarea {
+    resize: none;
+    border-radius: 5px;
+    border-color: #ced4da;
+}
+
+form textarea:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    #processing-output {
+        display: none;
+    }
+
+    .col-md-9 {
+        padding: 20px;
+    }
+}
+
+.agent-output .copy-agent-button {
+    /* Ensures the button is appropriately sized and spaced */
+    padding: 2px 8px;
+}
+
+.final-answer-box {
+    /* Optional: Styling for the final answer box */
+    white-space: pre-wrap; /* Preserves whitespace and line breaks */
+}
+
+
+/* Additions for Modal Content */
+#agentDetailsModal .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+#modal-agent-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    #processing-output {
+        /* Adds a top border for separation when sidebar is below */
+        border-top: 1px solid #dee2e6;
+    }
+
+    .col-md-9 {
+        padding: 20px;
+    }
+}
+
+/* Optional: Enhance the "View Details" Button Appearance */
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
