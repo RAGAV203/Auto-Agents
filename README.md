@@ -1,7 +1,8 @@
 # Auto-Agent: Replicating Chain of Thought Reasoning
 
 ## Project Overview
-
+![Description of the image](static/Auto-Agent.png)
+<br /><br />
 This project acts as a **proof of concept** aimed at replicating the reasoning capabilities of OpenAI's newly released O1 model. The O1 model leverages chain-of-thought prompting and reinforcement learning to enhance its problem-solving abilities through iterative reasoning. Our goal is to mimic this behavior using alternative models.
 
 In this implementation, we utilize a sequential agent-based system powered by the Gemini API (or any model with function-calling capabilities). This system is designed to generate solutions for coding-related problems and iteratively refine these solutions through chain-of-thought reasoning and reflective techniques. The Gemini API, with its robust code execution capabilities, is particularly well-suited for this project. Although it is compatible with Gemini Flash, we recommend using the Pro version to mitigate issues with external package dependencies, as the Pro version typically aligns with Python's standard library.
